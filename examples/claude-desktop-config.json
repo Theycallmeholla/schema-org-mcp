@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "schema-org": {
+      "command": "node",
+      "args": ["/absolute/path/to/schema-org-mcp/dist/index.js"],
+      "env": {}
+    }
+  }
+}
