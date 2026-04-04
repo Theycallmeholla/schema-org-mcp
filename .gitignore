@@ -29,6 +29,9 @@ yarn-error.log*
 .env.local
 .env.*.local
 
+# Claude Code
+.claude/
+
 # Test coverage
 coverage/
 .nyc_output/
