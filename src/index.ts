@@ -45,7 +45,7 @@ function registerTool(
   handler: (args: any) => Promise<{ content: { type: 'text'; text: string }[] }>
 ) {
   registeredTools.push(name);
-  server.registerTool(name, options, withObservability(name, handler));
+  server.registerTool(name, options as any, withObservability(name, handler) as any);
 }
 
 // === Operational Tools ===
