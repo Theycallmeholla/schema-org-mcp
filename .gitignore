@@ -4,6 +4,7 @@ node_modules/
 # Build output
 dist/
 *.js
+!scripts/generate-build-info.js
 *.js.map
 *.d.ts
 *.d.ts.map
