@@ -5,6 +5,7 @@
 **A Model Context Protocol server for the complete schema.org vocabulary**
 
 [![npm version](https://img.shields.io/npm/v/schema-org-mcp?style=flat-square)](https://www.npmjs.com/package/schema-org-mcp)
+[![npm downloads](https://img.shields.io/npm/dm/schema-org-mcp?style=flat-square)](https://www.npmjs.com/package/schema-org-mcp)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](LICENSE)
 [![Node.js](https://img.shields.io/badge/Node.js-%3E%3D18.0.0-green?style=flat-square&logo=node.js)](https://nodejs.org)
 [![MCP](https://img.shields.io/badge/MCP-Compatible-purple?style=flat-square)](https://modelcontextprotocol.io)
@@ -69,11 +70,23 @@ Empower AI assistants to explore schema.org types, generate JSON-LD examples, va
 - **Node.js** >= 18.0.0
 - **npm** or **yarn**
 
-### Clone and Build
+### Install via npm (recommended)
+
+```bash
+npm install -g schema-org-mcp
+```
+
+Or run directly without installing:
+
+```bash
+npx schema-org-mcp
+```
+
+### Build from Source
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-org/schema-org-mcp.git
+git clone https://github.com/Theycallmeholla/schema-org-mcp.git
 cd schema-org-mcp
 
 # Install dependencies
@@ -84,12 +97,6 @@ npm run build
 
 # Verify the installation
 npm start
-```
-
-### Install via npm (after publishing)
-
-```bash
-npm install -g schema-org-mcp
 ```
 
 ---
@@ -115,20 +122,7 @@ Add the server to your Claude Desktop configuration:
 </tr>
 </table>
 
-**Local Installation:**
-
-```json
-{
-  "mcpServers": {
-    "schema-org": {
-      "command": "node",
-      "args": ["/absolute/path/to/schema-org-mcp/dist/index.js"]
-    }
-  }
-}
-```
-
-**Via npx:**
+**Via npx (recommended):**
 
 ```json
 {
@@ -136,6 +130,19 @@ Add the server to your Claude Desktop configuration:
     "schema-org": {
       "command": "npx",
       "args": ["schema-org-mcp"]
+    }
+  }
+}
+```
+
+**Local build:**
+
+```json
+{
+  "mcpServers": {
+    "schema-org": {
+      "command": "node",
+      "args": ["/absolute/path/to/schema-org-mcp/dist/index.js"]
     }
   }
 }
