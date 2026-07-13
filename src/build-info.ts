@@ -1,7 +1,7 @@
 /**
  * Build information for runtime fingerprinting.
  * AUTO-GENERATED - DO NOT EDIT
- * Generated: 2026-04-04T15:22:12.869Z
+ * Generated: 2026-07-10T13:21:29.927Z
  */
 
 export interface BuildInfo {
@@ -14,8 +14,8 @@ export interface BuildInfo {
 
 export const BUILD_INFO: BuildInfo = {
   "version": "1.1.0",
-  "gitSha": "1a43e1d",
+  "gitSha": "2e372d8",
   "gitBranch": "main",
-  "buildTime": "2026-04-04T15:22:12.869Z",
-  "nodeVersion": "v20.14.0"
+  "buildTime": "2026-07-10T13:21:29.927Z",
+  "nodeVersion": "v22.20.0"
 };

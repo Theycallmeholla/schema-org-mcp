@@ -47,7 +47,7 @@ export class CacheManager {
     // Try disk cache
     try {
       const diskData = await this.loadFromDisk();
-      if (diskData) {
+      if (diskData && !this.isExpired(diskData.metadata.fetchedAt)) {
         this.memoryCache = diskData;
         return diskData;
       }
